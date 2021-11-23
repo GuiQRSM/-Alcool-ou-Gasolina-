@@ -23,29 +23,39 @@ class _MaterialLayoutState extends State<MaterialLayout> {
         ),
       ),
       body: Container(
-        padding: EdgeInsets.all(30),
+        decoration: BoxDecoration(border: Border.all(width: 4, color: Colors.blue),),
+        padding: EdgeInsets.all(16),
+        width: double.infinity,
         child: Column(
           children: <Widget>[
             Image.asset(
                 "logo/newlogocar.png",
-              height: 90,
+              height: 80,
             ),
-            Padding(padding: EdgeInsets.only(top:16)),
+            Padding(padding: EdgeInsets.only(top:10),),
             Text("Saiba qual é a melhor opção de abastecimento para o seu carro.",
             style: TextStyle(
-              fontSize: 25,
+              fontSize: 20,
               fontWeight: FontWeight.w600,
               color: Colors.black54,
             ),),
-            Padding(padding: EdgeInsets.only(top:16)),
+            Padding(padding: EdgeInsets.only(top:10),),
             TextField(
               keyboardType: TextInputType.number,
-              cursorColor: primeColor,
               decoration: InputDecoration(
-                labelText: "Preço do Álcool, ex 1.30",
+                labelText: "Preço do Álcool, ex: 1.39",
                 labelStyle: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w500,
+                  color: primeColor
+                ),
+              ),
+            ),
+            TextField(
+             keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: "Preço da Gasolina, ex: 2.40",
+                labelStyle: TextStyle(
+                  fontWeight: FontWeight.w500,
                   color: primeColor,
                 ),
               ),
