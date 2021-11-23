@@ -22,6 +22,19 @@ class _MaterialLayoutState extends State<MaterialLayout> {
           fontWeight: FontWeight.w600
         ),
       ),
+      body: Container(
+        padding: EdgeInsets.all(30),
+        child: Column(
+          children: <Widget>[
+            Image.asset(
+                "logo/newlogocar.png",
+              height: 90,
+            ),
+            Padding(padding: EdgeInsets.only(top:16)),
+            Text("Saiba qual é a melhor opção de abastecimento para o seu carro"),
+          ],
+        ),
+      ),
     );
   }
 }
