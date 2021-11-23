@@ -8,6 +8,9 @@ class MaterialLayout extends StatefulWidget {
 }
 
 class _MaterialLayoutState extends State<MaterialLayout> {
+  
+  var primeColor = Color.fromARGB(100, 134, 37, 39);
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold();
