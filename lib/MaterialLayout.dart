@@ -9,10 +9,19 @@ class MaterialLayout extends StatefulWidget {
 
 class _MaterialLayoutState extends State<MaterialLayout> {
   
-  var primeColor = Color.fromARGB(100, 134, 37, 39);
+  var primeColor = Color.fromARGB(150, 134, 37, 39);
   
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Álcool ou Gasolina"),
+        backgroundColor: primeColor,
+        titleTextStyle: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.w600
+        ),
+      ),
+    );
   }
 }
