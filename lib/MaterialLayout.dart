@@ -23,22 +23,26 @@ class _MaterialLayoutState extends State<MaterialLayout> {
         ),
       ),
       body: Container(
+        padding: EdgeInsets.all(32),
        child: Column(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(30),
+              padding: EdgeInsets.only(top: 16),
               child: Image.asset(
                   "logo/newlogocar.png"
               ),
             ),
-            Text(
-              "Saiba qual a melhor opção para abastecimento do seu carro",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w500,
-                color: primeColor,
-              ),),
+            Padding(
+              padding: EdgeInsets.only(top: 16),
+              child: Text(
+                "Saiba qual a melhor opção para abastecimento do seu carro",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w500,
+                  color: primeColor,
+                ),),
+            ),
             TextField(
               decoration: InputDecoration(
                 labelText: "Preço do Álcool, ex: 1.39",
