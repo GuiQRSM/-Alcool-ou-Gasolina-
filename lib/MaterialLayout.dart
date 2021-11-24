@@ -10,6 +10,9 @@ class MaterialLayout extends StatefulWidget {
 class _MaterialLayoutState extends State<MaterialLayout> {
   
   var primeColor = Color.fromARGB(255, 168, 26, 29);
+
+  TextEditingController _controllerAlcool = TextEditingController();
+  TextEditingController _controllerGasolina = TextEditingController();
   
   @override
   Widget build(BuildContext context) {
@@ -57,6 +60,7 @@ class _MaterialLayoutState extends State<MaterialLayout> {
                 fontSize: 15,
                 color: primeColor,
               ),
+              controller: _controllerAlcool,
             ),
             TextField(
               keyboardType: TextInputType.number,
@@ -73,11 +77,15 @@ class _MaterialLayoutState extends State<MaterialLayout> {
                   fontSize: 15,
                   color: primeColor
               ),
+              controller: _controllerGasolina,
             ),
             Padding(
                 padding: EdgeInsets.only(top: 13),
               child: RaisedButton(
-                onPressed: (){},
+                onPressed: () {
+                  print("Dado coletado Álcool: " + _controllerAlcool.text);
+                  print("Dado coletado Gasolina " + _controllerGasolina.text);
+                },
                 color: primeColor,
                 child: Text(
                   "Calcular",
