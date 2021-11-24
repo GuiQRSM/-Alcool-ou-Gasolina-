@@ -22,7 +22,11 @@ class _MaterialLayoutState extends State<MaterialLayout> {
           fontWeight: FontWeight.w600
         ),
       ),
-      body: ,
+      body: Column(
+        children: <Widget>[
+
+        ],
+      ),
     );
   }
 }
