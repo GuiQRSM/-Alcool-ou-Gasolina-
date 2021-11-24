@@ -27,13 +27,13 @@ class _MaterialLayoutState extends State<MaterialLayout> {
        child: Column(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(top: 16),
+              padding: EdgeInsets.only(bottom: 32),
               child: Image.asset(
                   "logo/newlogocar.png"
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 16),
+              padding: EdgeInsets.only(bottom: 10),
               child: Text(
                 "Saiba qual a melhor opção para abastecimento do seu carro",
                 textAlign: TextAlign.center,
@@ -44,6 +44,7 @@ class _MaterialLayoutState extends State<MaterialLayout> {
                 ),),
             ),
             TextField(
+              keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 labelText: "Preço do Álcool, ex: 1.39",
                 labelStyle: TextStyle(
@@ -54,6 +55,7 @@ class _MaterialLayoutState extends State<MaterialLayout> {
               ),
             ),
             TextField(
+              keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 labelText: "Preço da Gasolina, ex: 1.39",
                 labelStyle: TextStyle(
@@ -64,15 +66,18 @@ class _MaterialLayoutState extends State<MaterialLayout> {
                 focusColor: primeColor,
               ),
             ),
-            RaisedButton(
-              onPressed: (){},
-              color: primeColor,
-              child: Text(
-                "Calcular",
-                style: TextStyle(
-                  color: Colors.white,
-                ),),
-              padding: EdgeInsets.only(right: 26, left: 26),
+            Padding(
+                padding: EdgeInsets.only(top: 13),
+              child: RaisedButton(
+                onPressed: (){},
+                color: primeColor,
+                child: Text(
+                  "Calcular",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                padding: EdgeInsets.only(right: 26, left: 26),
+              ),
             ),
           ],
         ),
