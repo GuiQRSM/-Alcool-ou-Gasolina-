@@ -24,7 +24,21 @@ class _MaterialLayoutState extends State<MaterialLayout> {
       ),
       body: Column(
         children: <Widget>[
-
+          Padding(
+            padding: EdgeInsets.all(30),
+          child: Image.asset(
+            "logo/newlogocar.png"
+           ),
+          ),
+          Text(
+              "Saiba qual a melhor opção para abastecimento do seu carro",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w500,
+            color: primeColor,
+          ),
+          ),
         ],
       ),
     );
