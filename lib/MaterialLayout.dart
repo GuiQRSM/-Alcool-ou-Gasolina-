@@ -53,6 +53,10 @@ class _MaterialLayoutState extends State<MaterialLayout> {
                 ),
                 contentPadding: EdgeInsets.fromLTRB(30, 16, 30, 16),
               ),
+              style: TextStyle(
+                fontSize: 15,
+                color: primeColor,
+              ),
             ),
             TextField(
               keyboardType: TextInputType.number,
@@ -64,6 +68,10 @@ class _MaterialLayoutState extends State<MaterialLayout> {
                 ),
                 contentPadding: EdgeInsets.fromLTRB(30, 16, 30, 16),
                 focusColor: primeColor,
+              ),
+              style: TextStyle(
+                  fontSize: 15,
+                  color: primeColor
               ),
             ),
             Padding(
