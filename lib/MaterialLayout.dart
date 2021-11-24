@@ -26,8 +26,8 @@ class _MaterialLayoutState extends State<MaterialLayout> {
         ),
       ),
       body: Container(
-        padding: EdgeInsets.all(32),
        child: SingleChildScrollView(
+         padding: EdgeInsets.all(32),
          child: Column(
            crossAxisAlignment: CrossAxisAlignment.stretch,
            children: <Widget>[
