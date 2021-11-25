@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class MaterialLayout extends StatefulWidget {
   const MaterialLayout({Key? key}) : super(key: key);
@@ -20,11 +21,24 @@ void _activecalc() {
 var alccolPrice = double.tryParse(_controllerAlcool.text);
 var gasPrice = double.tryParse(_controllerGasolina.text);
 
+
 if(alccolPrice == null || gasPrice == null){
   setState(() {
     this._textResult = "Operação inválida, digite números acima de (0) e contendo o (.)!";
   });
 }
+
+var dividePrice = alccolPrice! / gasPrice!;
+if(dividePrice >= 0.7 ){
+  setState(() {
+    this._textResult = "Neste caso compensa abastecer com gasolina!";
+  });
+}else{
+  setState(() {
+    this._textResult = "Neste caso compensa abastecer com Álcool!";
+  });
+}
+
 
 }
 
