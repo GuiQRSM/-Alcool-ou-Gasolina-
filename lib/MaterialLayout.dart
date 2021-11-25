@@ -13,7 +13,13 @@ class _MaterialLayoutState extends State<MaterialLayout> {
 
   TextEditingController _controllerAlcool = TextEditingController();
   TextEditingController _controllerGasolina = TextEditingController();
-  
+
+void _activecalc() {
+
+
+
+}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,10 +90,7 @@ class _MaterialLayoutState extends State<MaterialLayout> {
              Padding(
                padding: EdgeInsets.only(top: 13),
                child: RaisedButton(
-                 onPressed: () {
-                   print("Dado coletado Álcool: " + _controllerAlcool.text);
-                   print("Dado coletado Gasolina " + _controllerGasolina.text);
-                 },
+                 onPressed: _activecalc,
                  color: primeColor,
                  child: Text(
                    "Calcular",
