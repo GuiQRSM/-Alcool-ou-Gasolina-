@@ -16,7 +16,8 @@ class _MaterialLayoutState extends State<MaterialLayout> {
 
 void _activecalc() {
 
-
+var alccolPrice = double.tryParse(_controllerAlcool.text);
+var gasPrice = double.tryParse(_controllerGasolina.text);
 
 }
 
