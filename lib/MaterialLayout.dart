@@ -14,31 +14,38 @@ class _MaterialLayoutState extends State<MaterialLayout> {
 
   TextEditingController _controllerAlcool = TextEditingController();
   TextEditingController _controllerGasolina = TextEditingController();
-  var _textResult = "Resulado";
+  var _textResult = "";
 
 void _activecalc() {
 
-var alccolPrice = double.tryParse(_controllerAlcool.text);
+var alcoolPrice = double.tryParse(_controllerAlcool.text);
 var gasPrice = double.tryParse(_controllerGasolina.text);
 
-
-if(alccolPrice == null || gasPrice == null){
+if(alcoolPrice == null || gasPrice == null){
   setState(() {
-    this._textResult = "Operação inválida, digite números acima de (0) e contendo o (.)!";
+    _textResult = "Valores inválidos! digite números acima de (0) e separados por (.)";
   });
 }
 
-var dividePrice = alccolPrice! / gasPrice!;
-if(dividePrice >= 0.7 ){
+var dividePrice = alcoolPrice! / gasPrice!;
+if(dividePrice >= 0.7){
   setState(() {
-    this._textResult = "Neste caso compensa abastecer com gasolina!";
+    _textResult = "Neste caso compensa o uso da gasolina!";
   });
 }else{
   setState(() {
-    this._textResult = "Neste caso compensa abastecer com Álcool!";
+    _textResult = "Neste caso compensa 0 uso do álcool!";
   });
 }
 
+_cleanFields();
+
+}
+
+void _cleanFields() {
+
+  _controllerAlcool.text = "";
+  _controllerGasolina.text = "";
 
 }
 
