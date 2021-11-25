@@ -13,11 +13,18 @@ class _MaterialLayoutState extends State<MaterialLayout> {
 
   TextEditingController _controllerAlcool = TextEditingController();
   TextEditingController _controllerGasolina = TextEditingController();
+  var _textResult = "Resulado";
 
 void _activecalc() {
 
 var alccolPrice = double.tryParse(_controllerAlcool.text);
 var gasPrice = double.tryParse(_controllerGasolina.text);
+
+if(alccolPrice == null || gasPrice == null){
+  setState(() {
+    this._textResult = "Operação inválida, digite números acima de (0) e contendo o (.)!";
+  });
+}
 
 }
 
@@ -103,7 +110,7 @@ var gasPrice = double.tryParse(_controllerGasolina.text);
              ),
              Padding(padding: EdgeInsets.only(top: 20),
              child: Text(
-               "Resultado",
+               "$_textResult",
                textAlign: TextAlign.center,
                style: TextStyle(
                  fontSize: 20,
