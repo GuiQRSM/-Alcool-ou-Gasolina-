@@ -13,6 +13,8 @@ class _TokenFrameState extends State<TokenFrame> {
   var primeColor = Color.fromARGB(255, 168, 26, 29);
   var _activeSwi = false;
   var _checkActive = false;
+  var _sliderValue = 0.0;
+  var _labelEvo = "";
 
   @override
   Widget build(BuildContext context) {
@@ -106,6 +108,35 @@ class _TokenFrameState extends State<TokenFrame> {
                         _checkActive = active2!;
                       });
                     }),
+              ),
+              Padding(
+                  padding: EdgeInsets.only(top: 14, bottom: 5),
+                child: Text(
+                  "Definição da quantidade de tokens",
+                  style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                      color: primeColor
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 2),
+                child: Slider(
+                    value: _sliderValue,
+                    min: 0,
+                    max: 10,
+                    label: _labelEvo,
+                    divisions: 10,
+                    activeColor: primeColor,
+                    inactiveColor: Colors.redAccent,
+                    onChanged: (double? evo){
+                      setState(() {
+                        _sliderValue = evo!;
+                        _labelEvo = "Quantidade de tokens: $_sliderValue";
+                      });
+                    },
+                ),
               ),
             ],
           ),
