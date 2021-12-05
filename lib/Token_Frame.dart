@@ -30,7 +30,7 @@ class _TokenFrameState extends State<TokenFrame> {
           child: Column(
             children: <Widget>[
               Padding(
-                  padding: EdgeInsets.only(top:16),
+                  padding: EdgeInsets.only(top:16, bottom: 5),
                 child: Text(
                     "Faça aqui a emissão do Token!",
                 style: TextStyle(
@@ -38,6 +38,30 @@ class _TokenFrameState extends State<TokenFrame> {
                   fontWeight: FontWeight.w500,
                   color: primeColor,
                 ),),
+              ),
+              Padding(
+                  padding: EdgeInsets.only(top: 10),
+                child: TextField(
+                  keyboardType: TextInputType.text,
+                  decoration: InputDecoration(
+                    labelText: "Insira o Token!",
+                    labelStyle: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w600,
+                      color: primeColor,
+                    ),
+                  ),
+                  obscureText: true,
+                  maxLength: 10,
+                  maxLengthEnforced: true,
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w600,
+                    color: primeColor,
+                    wordSpacing: 4
+                  ),
+                  cursorColor: primeColor,
+                ),
               ),
             ],
           ),
