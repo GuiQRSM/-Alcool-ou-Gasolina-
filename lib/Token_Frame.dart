@@ -11,6 +11,7 @@ class TokenFrame extends StatefulWidget {
 class _TokenFrameState extends State<TokenFrame> {
 
   var primeColor = Color.fromARGB(255, 168, 26, 29);
+  TextEditingController _controllerField = TextEditingController();
   var _activeSwi = false;
   var _checkActive = false;
   var _sliderValue = 0.0;
@@ -64,8 +65,9 @@ class _TokenFrameState extends State<TokenFrame> {
                     fontSize: 15,
                     fontWeight: FontWeight.w600,
                     color: primeColor,
-                    wordSpacing: 4
+                    wordSpacing: 4,
                   ),
+                  controller: _controllerField,
                   cursorColor: primeColor,
                 ),
               ),
@@ -143,7 +145,14 @@ class _TokenFrameState extends State<TokenFrame> {
               Padding(
                   padding: EdgeInsets.only(top: 14),
               child: RaisedButton(
-                onPressed: (){},
+                onPressed: (){
+                  setState(() {
+                    _showResult = "Conteúdo do TextField: $_controllerField"
+                                  "Estado atual do Switch: $_activeSwi"
+                                  "Estado atual do Checkbox: $_checkActive"
+                                  "$_labelEvo";
+                  });
+                },
                 color: primeColor,
                 padding: EdgeInsets.all(16),
                 child: Text(
@@ -153,8 +162,18 @@ class _TokenFrameState extends State<TokenFrame> {
                   fontWeight: FontWeight.w500,
                   color: Colors.white,
                 ),),
+                ),
               ),
-              ),
+              Padding(
+                  padding: EdgeInsets.only(top: 14),
+                child: Text(
+                  "$_showResult",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                    color: primeColor,
+                  ),),
+              )
             ],
           ),
         ),
