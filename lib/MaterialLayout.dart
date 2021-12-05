@@ -1,3 +1,4 @@
+import 'package:alcool_ou_gasolina/Token_Frame.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -143,7 +144,12 @@ void _cleanFields() {
                padding: EdgeInsets.only(top: 10),
                child: RaisedButton(
                    onPressed: (){
-
+                     Navigator.push(
+                         context,
+                         MaterialPageRoute(
+                             builder: (context) => TokenFrame(),
+                         ),
+                     );
                    },
                  color: primeColor,
                  child: Text(
