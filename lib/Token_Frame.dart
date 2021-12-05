@@ -18,6 +18,10 @@ class _TokenFrameState extends State<TokenFrame> {
   var _labelEvo = "";
   var _showResult = "";
 
+  void _cleanField() {
+    _controllerField.text = "";
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -147,10 +151,11 @@ class _TokenFrameState extends State<TokenFrame> {
               child: RaisedButton(
                 onPressed: (){
                   setState(() {
-                    _showResult = "Conteúdo do TextField: $_controllerField"
-                                  "Estado atual do Switch: $_activeSwi"
-                                  "Estado atual do Checkbox: $_checkActive"
+                    _showResult = "Conteúdo do TextField: " + _controllerField.text + " \n"
+                                  "Estado atual do Switch: $_activeSwi\n"
+                                  "Estado atual do Checkbox: $_checkActive\n"
                                   "$_labelEvo";
+                                   _cleanField();
                   });
                 },
                 color: primeColor,
