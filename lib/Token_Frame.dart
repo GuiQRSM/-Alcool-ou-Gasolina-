@@ -13,6 +13,15 @@ class _TokenFrameState extends State<TokenFrame> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Emissão de Token"),
+        backgroundColor: primeColor,
+        titleTextStyle: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w600
+        ),
+      ),
+    );
   }
 }
