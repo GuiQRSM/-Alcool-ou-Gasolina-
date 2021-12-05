@@ -138,7 +138,23 @@ void _cleanFields() {
                  fontWeight: FontWeight.w500,
                  color: primeColor,
                ),
-             ),)
+             ),),
+             Padding(
+               padding: EdgeInsets.only(top: 10),
+               child: RaisedButton(
+                   onPressed: (){
+
+                   },
+                 color: primeColor,
+                 child: Text(
+                   "Emitir Token",
+                   style: TextStyle(
+                     color: Colors.white,
+                   ),
+                 ),
+                 padding: EdgeInsets.only(right: 26, left: 26),
+               ),
+             ),
            ],
          ),
        ),
