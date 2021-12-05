@@ -12,6 +12,7 @@ class _TokenFrameState extends State<TokenFrame> {
 
   var primeColor = Color.fromARGB(255, 168, 26, 29);
   var _activeSwi = false;
+  var _checkActive = false;
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +85,28 @@ class _TokenFrameState extends State<TokenFrame> {
                       });
                     },
                 ),
-              )
+              ),
+              Padding(
+                  padding: EdgeInsets.only(top: 14),
+                child: CheckboxListTile(
+                    value: _checkActive,
+                    title: Text(
+                        "Salvar seu token automaticamente",
+                      style: TextStyle(
+                          fontSize: 17,
+                          fontWeight: FontWeight.w500,
+                          color: primeColor
+                      ),
+                    ),
+                    activeColor: primeColor,
+                    secondary: Icon(Icons.save,
+                    color: primeColor,),
+                    onChanged: (bool? active2){
+                      setState(() {
+                        _checkActive = active2!;
+                      });
+                    }),
+              ),
             ],
           ),
         ),
