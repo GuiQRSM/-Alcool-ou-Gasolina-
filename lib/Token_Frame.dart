@@ -15,6 +15,7 @@ class _TokenFrameState extends State<TokenFrame> {
   var _checkActive = false;
   var _sliderValue = 0.0;
   var _labelEvo = "";
+  var _showResult = "";
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +33,7 @@ class _TokenFrameState extends State<TokenFrame> {
         child: SingleChildScrollView(
           padding: EdgeInsets.all(32),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Padding(
                   padding: EdgeInsets.only(top:16, bottom: 5),
@@ -137,6 +139,21 @@ class _TokenFrameState extends State<TokenFrame> {
                       });
                     },
                 ),
+              ),
+              Padding(
+                  padding: EdgeInsets.only(top: 14),
+              child: RaisedButton(
+                onPressed: (){},
+                color: primeColor,
+                padding: EdgeInsets.all(16),
+                child: Text(
+                    "Confirmar",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white,
+                ),),
+              ),
               ),
             ],
           ),
