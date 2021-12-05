@@ -11,6 +11,7 @@ class TokenFrame extends StatefulWidget {
 class _TokenFrameState extends State<TokenFrame> {
 
   var primeColor = Color.fromARGB(255, 168, 26, 29);
+  var _activeSwi = false;
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +45,7 @@ class _TokenFrameState extends State<TokenFrame> {
                 child: TextField(
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    labelText: "Insira o Token!",
+                    labelText: "Insira o seu ID!",
                     labelStyle: TextStyle(
                       fontSize: 17,
                       fontWeight: FontWeight.w600,
@@ -63,6 +64,27 @@ class _TokenFrameState extends State<TokenFrame> {
                   cursorColor: primeColor,
                 ),
               ),
+              Padding(
+                  padding: EdgeInsets.only(top: 14),
+                child: SwitchListTile(
+                    value: _activeSwi,
+                    title: Text(
+                        "Receber o token por SMS",
+                    style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w500,
+                      color: primeColor
+                    ),),
+                    secondary: Icon(Icons.sms,
+                    color: primeColor,),
+                    activeColor: primeColor,
+                    onChanged: (bool? active){
+                      setState(() {
+                        _activeSwi = active!;
+                      });
+                    },
+                ),
+              )
             ],
           ),
         ),
