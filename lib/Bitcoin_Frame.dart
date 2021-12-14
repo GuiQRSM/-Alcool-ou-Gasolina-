@@ -7,6 +7,9 @@ class BitcoinFrame extends StatefulWidget {
   _BitcoinFrameState createState() => _BitcoinFrameState();
 }
 
+var mainColor = Color.fromRGBO(51, 255, 173, 1);
+var extraColor = Color.fromRGBO(0, 119, 179, 1);
+
 class _BitcoinFrameState extends State<BitcoinFrame> {
   @override
   Widget build(BuildContext context) {
