@@ -39,7 +39,23 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
                     color: extraColor,
                   ),
                 ),
-              )
+              ),
+              Padding(
+                  padding: EdgeInsets.only(top: 0),
+                child: RaisedButton(
+                  padding: EdgeInsets.all(16),
+                    onPressed: (){},
+                  color: extraColor,
+                  child: Text(
+                    "Atualizar",
+                    style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w700,
+                      color: mainColor,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
