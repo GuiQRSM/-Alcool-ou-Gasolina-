@@ -41,7 +41,7 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
                 ),
               ),
               Padding(
-                  padding: EdgeInsets.only(top: 0),
+                  padding: EdgeInsets.only(bottom: 13),
                 child: RaisedButton(
                   padding: EdgeInsets.all(16),
                     onPressed: (){},
@@ -56,6 +56,24 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
                   ),
                 ),
               ),
+              Padding(
+                padding: EdgeInsets.only(top:0),
+                child: RaisedButton(
+                  padding: EdgeInsets.all(18),
+                    onPressed: (){
+                    Navigator.pop(context);
+                    },
+                  color: extraColor,
+                  child: Text(
+                    "Voltar",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w700,
+                      color: mainColor,
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
         ),
