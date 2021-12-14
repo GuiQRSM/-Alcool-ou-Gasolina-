@@ -94,11 +94,15 @@ void _cleanFields() {
                    color: primeColor,
                  ),
                  contentPadding: EdgeInsets.fromLTRB(30, 16, 30, 16),
+                 focusedBorder: UnderlineInputBorder(
+                   borderSide: BorderSide(color: primeColor),
+                 ),
                ),
                style: TextStyle(
                  fontSize: 15,
                  color: primeColor,
                ),
+               cursorColor: primeColor,
                controller: _controllerAlcool,
              ),
              TextField(
