@@ -10,6 +10,8 @@ class BitcoinFrame extends StatefulWidget {
 class _BitcoinFrameState extends State<BitcoinFrame> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white70,
+    );
   }
 }
