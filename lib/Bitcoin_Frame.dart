@@ -21,7 +21,13 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
           padding: EdgeInsets.all(32),
           child: Column(
             children: <Widget>[
-
+              Padding(
+                  padding: EdgeInsets.only(top: 175, bottom: 3),
+                child: Image.asset(
+                    "logo/bitcoin_edit.png",
+                  height: 90,
+                ),
+              )
             ],
           ),
         ),
