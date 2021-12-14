@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 class BitcoinFrame extends StatefulWidget {
   const BitcoinFrame({Key? key}) : super(key: key);
@@ -21,6 +22,7 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
     var url = Uri.parse("https://blockchain.info/ticker");
 
     response = await http.get(url);
+
 
   }
 
