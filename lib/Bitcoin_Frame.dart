@@ -15,6 +15,17 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white70,
+      body: Container(
+        width: double.infinity,
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(32),
+          child: Column(
+            children: <Widget>[
+
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
