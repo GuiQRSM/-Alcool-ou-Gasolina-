@@ -22,7 +22,7 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
     var url = Uri.parse("https://blockchain.info/ticker");
 
     response = await http.get(url);
-
+    Map<String, dynamic> values = json.decode(response.body);
 
   }
 
