@@ -1,4 +1,5 @@
 import 'package:alcool_ou_gasolina/Token_Frame.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -169,6 +170,18 @@ void _cleanFields() {
                  padding: EdgeInsets.only(right: 26, left: 26),
                ),
              ),
+             Padding(
+                 padding: EdgeInsets.only(top: 5),
+               child: RaisedButton(
+                   onPressed: (){},
+                 color: Colors.white38,
+                 child: Image.asset(
+                     "logo/bitcoin_edit.png",
+                   height: 20,
+                 ),
+                 padding: EdgeInsets.only(right: 26, left: 26),
+               ),
+             )
            ],
          ),
        ),
