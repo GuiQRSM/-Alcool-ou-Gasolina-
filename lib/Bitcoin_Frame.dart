@@ -18,7 +18,7 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
   void _getPrice () {
 
     http.Response response;
-
+    var url = Uri.parse("https://blockchain.info/ticker");
 
   }
 
