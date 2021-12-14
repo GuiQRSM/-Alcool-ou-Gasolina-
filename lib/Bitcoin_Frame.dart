@@ -23,7 +23,8 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
 
     response = await http.get(url);
     Map<String, dynamic> values = json.decode(response.body);
-
+    dynamic all = values["BRL"];
+    dynamic last = all["last"];
   }
 
   @override
