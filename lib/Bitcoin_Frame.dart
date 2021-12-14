@@ -20,6 +20,7 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
     http.Response response;
     var url = Uri.parse("https://blockchain.info/ticker");
 
+    response = await http.get(url);
 
   }
 
