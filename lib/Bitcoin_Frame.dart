@@ -13,6 +13,13 @@ var extraColor = Color.fromRGBO(0, 119, 179, 1);
 var _dinamicPrice = "R\$";
 
 class _BitcoinFrameState extends State<BitcoinFrame> {
+
+  void _getPrice () {
+
+
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
