@@ -12,7 +12,7 @@ class BitcoinFrame extends StatefulWidget {
 
 var mainColor = Color.fromRGBO(51, 255, 173, 1);
 var extraColor = Color.fromRGBO(0, 119, 179, 1);
-var _dinamicPrice = "R\$";
+var _dinamicPrice = "";
 
 class _BitcoinFrameState extends State<BitcoinFrame> {
 
@@ -25,6 +25,11 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
     Map<String, dynamic> values = json.decode(response.body);
     dynamic all = values["BRL"];
     dynamic last = all["last"];
+
+    setState(() {
+      _dinamicPrice = "R\$ ${last}";
+    });
+
   }
 
   @override
