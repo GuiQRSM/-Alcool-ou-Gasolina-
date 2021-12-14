@@ -1,3 +1,4 @@
+import 'package:alcool_ou_gasolina/Bitcoin_Frame.dart';
 import 'package:alcool_ou_gasolina/Token_Frame.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -173,7 +174,14 @@ void _cleanFields() {
              Padding(
                  padding: EdgeInsets.only(top: 5),
                child: RaisedButton(
-                   onPressed: (){},
+                   onPressed: (){
+                     Navigator.push(
+                         context,
+                         MaterialPageRoute(
+                             builder: (context) => BitcoinFrame(),
+                         ),
+                     );
+                   },
                  color: Colors.white38,
                  child: Image.asset(
                      "logo/bitcoin_edit.png",
