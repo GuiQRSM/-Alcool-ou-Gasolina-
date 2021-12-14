@@ -35,7 +35,7 @@ if(dividePrice >= 0.7){
   });
 }else{
   setState(() {
-    _textResult = "Neste caso compensa 0 uso do álcool!";
+    _textResult = "Neste caso compensa o uso do álcool!";
   });
 }
 
@@ -53,6 +53,7 @@ void _cleanFields() {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Álcool ou Gasolina"),
         backgroundColor: primeColor,
