@@ -54,7 +54,7 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
                   padding: EdgeInsets.only(bottom: 13),
                 child: RaisedButton(
                   padding: EdgeInsets.all(16),
-                    onPressed: (){},
+                    onPressed: _getPrice,
                   color: extraColor,
                   child: Text(
                     "Atualizar",
