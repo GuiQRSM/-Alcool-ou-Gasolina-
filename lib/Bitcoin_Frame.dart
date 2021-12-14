@@ -9,6 +9,7 @@ class BitcoinFrame extends StatefulWidget {
 
 var mainColor = Color.fromRGBO(51, 255, 173, 1);
 var extraColor = Color.fromRGBO(0, 119, 179, 1);
+var _dinamicPrice = "R\$";
 
 class _BitcoinFrameState extends State<BitcoinFrame> {
   @override
@@ -22,10 +23,21 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
           child: Column(
             children: <Widget>[
               Padding(
-                  padding: EdgeInsets.only(top: 175, bottom: 3),
+                  padding: EdgeInsets.only(top: 175, bottom: 5),
                 child: Image.asset(
                     "logo/bitcoin_edit.png",
                   height: 90,
+                ),
+              ),
+              Padding(
+                  padding: EdgeInsets.only(bottom: 15),
+                child: Text(
+                  "$_dinamicPrice",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
+                    color: extraColor,
+                  ),
                 ),
               )
             ],
