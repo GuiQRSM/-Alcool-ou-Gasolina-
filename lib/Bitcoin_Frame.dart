@@ -17,6 +17,7 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
 
   void _getPrice () {
 
+    http.Response response;
 
 
   }
