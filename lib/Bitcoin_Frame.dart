@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class BitcoinFrame extends StatefulWidget {
   const BitcoinFrame({Key? key}) : super(key: key);
@@ -21,6 +22,7 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
         child: SingleChildScrollView(
           padding: EdgeInsets.all(32),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Padding(
                   padding: EdgeInsets.only(top: 175, bottom: 5),
@@ -38,6 +40,7 @@ class _BitcoinFrameState extends State<BitcoinFrame> {
                     fontWeight: FontWeight.w700,
                     color: extraColor,
                   ),
+                  textAlign: TextAlign.center,
                 ),
               ),
               Padding(
