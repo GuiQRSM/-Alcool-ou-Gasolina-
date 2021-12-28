@@ -33,6 +33,7 @@ class _TokenFrameState extends State<TokenFrame> {
             height: 120,
         ),
         backgroundColor: primeColor,
+        actions: <Widget>[],
       ),
       body: Container(
         width: double.infinity,
