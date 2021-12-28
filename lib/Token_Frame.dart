@@ -33,10 +33,6 @@ class _TokenFrameState extends State<TokenFrame> {
             height: 120,
         ),
         backgroundColor: primeColor,
-        titleTextStyle: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.w600
-        ),
       ),
       body: Container(
         width: double.infinity,
