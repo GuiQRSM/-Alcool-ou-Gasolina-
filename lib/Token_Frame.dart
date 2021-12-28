@@ -33,7 +33,18 @@ class _TokenFrameState extends State<TokenFrame> {
             height: 120,
         ),
         backgroundColor: primeColor,
-        actions: <Widget>[],
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+                Icons.account_circle_sharp,
+            color: Colors.white,
+            ),
+            onPressed: (){
+              print("Ícone de conta acionado!");
+            },
+            iconSize: 35,
+          ),
+        ],
       ),
       body: Container(
         width: double.infinity,
