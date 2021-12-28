@@ -25,6 +25,7 @@ class _TokenFrameState extends State<TokenFrame> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Emissão de Token"),
         backgroundColor: primeColor,
