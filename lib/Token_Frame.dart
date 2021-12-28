@@ -42,8 +42,18 @@ class _TokenFrameState extends State<TokenFrame> {
             onPressed: (){
               print("Ícone de conta acionado!");
             },
-            iconSize: 35,
+            iconSize: 25,
           ),
+          IconButton(
+            icon: Icon(
+                Icons.announcement,
+            color: Colors.white,
+            ),
+            onPressed: (){
+              print("Ícone de anunciamento acionado!");
+            },
+            iconSize: 25,
+          )
         ],
       ),
       body: Container(
