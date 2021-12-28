@@ -27,7 +27,11 @@ class _TokenFrameState extends State<TokenFrame> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Emissão de Token"),
+        title: Image.asset(
+            "logo/newlogocar.png",
+        width: 150,
+            height: 120,
+        ),
         backgroundColor: primeColor,
         titleTextStyle: TextStyle(
             fontSize: 20,
