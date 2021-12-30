@@ -56,14 +56,6 @@ void _cleanFields() {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text("Álcool ou Gasolina"),
-        backgroundColor: primeColor,
-        titleTextStyle: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.w600
-        ),
-      ),
       body: Container(
        child: SingleChildScrollView(
          padding: EdgeInsets.all(32),
