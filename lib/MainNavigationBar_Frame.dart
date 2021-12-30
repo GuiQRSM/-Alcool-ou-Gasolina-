@@ -8,6 +8,7 @@ class MainNaviagtion extends StatefulWidget {
 }
 
 var primeColor = Color.fromARGB(255, 168, 26, 29);
+var _actualIndex = 3;
 
 class _MainNaviagtionState extends State<MainNaviagtion> {
   @override
