@@ -23,7 +23,7 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
         actions: <Widget>[
           IconButton(
             icon: Icon(
-              Icons.account_circle_sharp,
+              Icons.analytics_rounded,
               color: Colors.white,
             ),
             onPressed: (){
@@ -33,21 +33,11 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
           ),
           IconButton(
             icon: Icon(
-              Icons.announcement,
+              Icons.settings_rounded,
               color: Colors.white,
             ),
             onPressed: (){
               print("Ícone de anunciamento acionado!");
-            },
-            iconSize: 25,
-          ),
-          IconButton(
-            icon: Icon(
-              Icons.update_rounded,
-              color: Colors.white,
-            ),
-            onPressed: (){
-              print("Ícone de atualização acionado!");
             },
             iconSize: 25,
           ),
