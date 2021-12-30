@@ -14,6 +14,16 @@ class _ChatFrameState extends State<ChatFrame> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      body: Center(
+        child: Text(
+          "Chat",
+          style: TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w700,
+            color: primeColor,
+          ),
+        ),
+      ),
     );
   }
 }

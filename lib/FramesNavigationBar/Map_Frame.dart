@@ -14,6 +14,16 @@ class _MapFrameState extends State<MapFrame> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      body: Center(
+        child: Text(
+            "Localizção",
+          style: TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w700,
+            color: primeColor,
+          ),
+        ),
+      ),
     );
   }
 }
