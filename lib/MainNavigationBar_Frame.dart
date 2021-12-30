@@ -45,6 +45,7 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
       ),
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: primeColor,
           items: [
             BottomNavigationBarItem(
               title: Text(
@@ -81,7 +82,7 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
                 Icons.chat_rounded,
                 color: Colors.white,
               ),
-            )
+            ),
           ],
       ),
     );
