@@ -48,6 +48,11 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: primeColor,
           fixedColor: Colors.white,
+          onTap: (index){
+          setState(() {
+            _actualIndex = index;
+          });
+          },
           currentIndex: _actualIndex,
           items: [
             BottomNavigationBarItem(
