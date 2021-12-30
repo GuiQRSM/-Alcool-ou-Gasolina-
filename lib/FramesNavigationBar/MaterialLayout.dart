@@ -132,7 +132,7 @@ void _cleanFields() {
                  padding: EdgeInsets.only(right: 26, left: 26),
                ),
              ),
-             Padding(padding: EdgeInsets.only(top: 20),
+             Padding(padding: EdgeInsets.only(top: 2),
              child: Text(
                "$_textResult",
                textAlign: TextAlign.center,
@@ -143,7 +143,7 @@ void _cleanFields() {
                ),
              ),),
              Padding(
-                 padding: EdgeInsets.only(top: 5),
+                 padding: EdgeInsets.only(top: 2),
                child: RaisedButton(
                    onPressed: (){
                      Navigator.push(
