@@ -8,7 +8,7 @@ class MainNaviagtion extends StatefulWidget {
 }
 
 var primeColor = Color.fromARGB(255, 168, 26, 29);
-var _actualIndex = 3;
+var _actualIndex;
 
 class _MainNaviagtionState extends State<MainNaviagtion> {
   @override
@@ -48,6 +48,7 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: primeColor,
           fixedColor: Colors.white,
+          type: BottomNavigationBarType.fixed,
           onTap: (index){
           setState(() {
             _actualIndex = index;
