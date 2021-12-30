@@ -26,46 +26,6 @@ class _TokenFrameState extends State<TokenFrame> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Image.asset(
-            "logo/newlogocar.png",
-        width: 150,
-            height: 120,
-        ),
-        backgroundColor: primeColor,
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(
-                Icons.account_circle_sharp,
-            color: Colors.white,
-            ),
-            onPressed: (){
-              print("Ícone de conta acionado!");
-            },
-            iconSize: 25,
-          ),
-          IconButton(
-            icon: Icon(
-                Icons.announcement,
-            color: Colors.white,
-            ),
-            onPressed: (){
-              print("Ícone de anunciamento acionado!");
-            },
-            iconSize: 25,
-          ),
-          IconButton(
-            icon: Icon(
-                Icons.update_rounded,
-            color: Colors.white,
-            ),
-            onPressed: (){
-              print("Ícone de atualização acionado!");
-            },
-            iconSize: 25,
-          ),
-        ],
-      ),
       body: Container(
         width: double.infinity,
         child: SingleChildScrollView(
