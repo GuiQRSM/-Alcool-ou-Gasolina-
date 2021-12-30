@@ -44,6 +44,9 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
         ],
       ),
       body: Container(),
+      bottomNavigationBar: BottomNavigationBar(
+          ,
+      ),
     );
   }
 }
