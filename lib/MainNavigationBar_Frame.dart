@@ -1,3 +1,7 @@
+import 'package:alcool_ou_gasolina/FramesNavigationBar/Chat_Frame.dart';
+import 'package:alcool_ou_gasolina/FramesNavigationBar/Map_Frame.dart';
+import 'package:alcool_ou_gasolina/FramesNavigationBar/MaterialLayout.dart';
+import 'package:alcool_ou_gasolina/FramesNavigationBar/Token_Frame.dart';
 import 'package:flutter/material.dart';
 
 class MainNaviagtion extends StatefulWidget {
@@ -15,7 +19,10 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
   Widget build(BuildContext context) {
 
     List<Widget> frames = [
-
+      MaterialLayout(),
+      MapFrame(),
+      ChatFrame(),
+      TokenFrame(),
     ];
 
     return Scaffold(
