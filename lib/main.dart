@@ -9,7 +9,6 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MainNaviagtion(),
-      //home: TokenFrame(),
     ),
   );
 
