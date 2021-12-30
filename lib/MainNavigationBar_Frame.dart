@@ -8,7 +8,7 @@ class MainNaviagtion extends StatefulWidget {
 }
 
 var primeColor = Color.fromARGB(255, 168, 26, 29);
-var _actualIndex;
+var _actualIndex = 4;
 
 class _MainNaviagtionState extends State<MainNaviagtion> {
   @override
@@ -49,12 +49,12 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
         backgroundColor: primeColor,
           fixedColor: Colors.white,
           type: BottomNavigationBarType.fixed,
-          onTap: (index){
+        onTap: (index){
           setState(() {
             _actualIndex = index;
           });
-          },
-          currentIndex: _actualIndex,
+        },
+        currentIndex: _actualIndex,
           items: [
             BottomNavigationBarItem(
               title: Text(
@@ -89,6 +89,18 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
                 ),),
               icon: Icon(
                 Icons.chat_rounded,
+                color: Colors.white,
+              ),
+            ),
+            BottomNavigationBarItem(
+              title: Text(
+                "Token",
+                style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white
+                ),),
+              icon: Icon(
+                Icons.vpn_key_rounded,
                 color: Colors.white,
               ),
             ),
