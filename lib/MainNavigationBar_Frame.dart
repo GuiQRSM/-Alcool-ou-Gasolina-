@@ -46,7 +46,42 @@ class _MainNaviagtionState extends State<MainNaviagtion> {
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
           items: [
-
+            BottomNavigationBarItem(
+              title: Text(
+                  "Menu",
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                color: Colors.white
+              ),),
+              icon: Icon(
+                Icons.local_gas_station_rounded,
+                color: Colors.white,
+              ),
+            ),
+            BottomNavigationBarItem(
+              title: Text(
+                "Mapa",
+                style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white
+                ),),
+              icon: Icon(
+                Icons.map_rounded,
+                color: Colors.white,
+              ),
+            ),
+            BottomNavigationBarItem(
+              title: Text(
+                "Chat",
+                style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white
+                ),),
+              icon: Icon(
+                Icons.chat_rounded,
+                color: Colors.white,
+              ),
+            )
           ],
       ),
     );
