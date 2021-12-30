@@ -143,27 +143,6 @@ void _cleanFields() {
                ),
              ),),
              Padding(
-               padding: EdgeInsets.only(top: 10),
-               child: RaisedButton(
-                   onPressed: (){
-                     Navigator.push(
-                         context,
-                         MaterialPageRoute(
-                             builder: (context) => TokenFrame(),
-                         ),
-                     );
-                   },
-                 color: primeColor,
-                 child: Text(
-                   "Emitir Token",
-                   style: TextStyle(
-                     color: Colors.white,
-                   ),
-                 ),
-                 padding: EdgeInsets.only(right: 26, left: 26),
-               ),
-             ),
-             Padding(
                  padding: EdgeInsets.only(top: 5),
                child: RaisedButton(
                    onPressed: (){
