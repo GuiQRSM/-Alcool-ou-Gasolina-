@@ -13,6 +13,11 @@ var _actualIndex = 4;
 class _MainNaviagtionState extends State<MainNaviagtion> {
   @override
   Widget build(BuildContext context) {
+
+    List<Widget> frames = [
+
+    ];
+
     return Scaffold(
       appBar: AppBar(
         title: Image.asset(
