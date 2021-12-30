@@ -1,5 +1,5 @@
-import 'package:alcool_ou_gasolina/Bitcoin_Frame.dart';
-import 'package:alcool_ou_gasolina/Token_Frame.dart';
+import 'package:alcool_ou_gasolina/MaterialLayout_Content/Bitcoin_Frame.dart';
+import 'package:alcool_ou_gasolina/MaterialLayout_Content/Token_Frame.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
