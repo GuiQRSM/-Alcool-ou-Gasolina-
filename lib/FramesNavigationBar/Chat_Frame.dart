@@ -12,6 +12,8 @@ var primeColor = Color.fromARGB(255, 168, 26, 29);
 class _ChatFrameState extends State<ChatFrame> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+    );
   }
 }
