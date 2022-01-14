@@ -68,6 +68,14 @@ class _SharedState extends State<Shared> {
                   cursorColor: Colors.deepOrange,
                   controller: _controllerField,
                 ),
+                Padding(
+                  padding: EdgeInsets.only(top: 12),
+                  child: Row(
+                    children: <Widget>[
+
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
