@@ -25,6 +25,19 @@ class _SharedState extends State<Shared> {
           color: Colors.amberAccent,
         ),
       ),
+      body: Container(
+        width: double.infinity,
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16),
+          child: Center(
+            child: Column(
+              children: <Widget>[
+
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
