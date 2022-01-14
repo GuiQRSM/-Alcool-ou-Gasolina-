@@ -11,6 +11,7 @@ class Shared extends StatefulWidget {
 class _SharedState extends State<Shared> {
 
   TextEditingController _controllerField = TextEditingController();
+  var dinamicText;
 
   @override
   Widget build(BuildContext context) {
