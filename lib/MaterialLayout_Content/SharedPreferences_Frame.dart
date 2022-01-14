@@ -37,6 +37,11 @@ class _SharedState extends State<Shared> {
 
   _remove() async {
 
+    final objPrefs = await SharedPreferences.getInstance();
+    objPrefs.remove("key");
+
+    print("Operação (Remover): OK!");
+
   }
 
   @override
