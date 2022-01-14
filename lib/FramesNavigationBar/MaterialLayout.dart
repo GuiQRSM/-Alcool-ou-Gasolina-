@@ -160,7 +160,7 @@ void _cleanFields() {
                  ),
                  padding: EdgeInsets.only(right: 26, left: 26),
                ),
-             )
+             ),
            ],
          ),
        ),
