@@ -32,7 +32,9 @@ class _SharedState extends State<Shared> {
           child: Center(
             child: Column(
               children: <Widget>[
-
+                TextField(
+                  keyboardType: TextInputType.text,
+                ),
               ],
             ),
           ),
