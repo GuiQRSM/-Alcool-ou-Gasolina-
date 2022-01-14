@@ -19,6 +19,10 @@ class _SharedState extends State<Shared> {
               color: Colors.amberAccent,
             ),
         ),
+        backgroundColor: Colors.deepOrange,
+        iconTheme: IconThemeData(
+          color: Colors.amberAccent,
+        ),
       ),
     );
   }
