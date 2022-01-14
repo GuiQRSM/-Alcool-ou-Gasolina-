@@ -15,6 +15,13 @@ class _SharedState extends State<Shared> {
 
   _save() async {
 
+    String contentController = _controllerField.text;
+
+    final objPrefs = await SharedPreferences.getInstance();
+    await objPrefs.setString("key", contentController);
+
+    print("Operação (Salvar): ${_controllerField.toString()}");
+
   }
 
   _rescue() async {
