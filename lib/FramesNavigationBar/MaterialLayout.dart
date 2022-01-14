@@ -2,7 +2,6 @@ import 'package:alcool_ou_gasolina/MaterialLayout_Content/Bitcoin_Frame.dart';
 import 'package:alcool_ou_gasolina/FramesNavigationBar/Token_Frame.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:math';
 
 class MaterialLayout extends StatefulWidget {
