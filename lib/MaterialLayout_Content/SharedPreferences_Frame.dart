@@ -71,8 +71,47 @@ class _SharedState extends State<Shared> {
                 Padding(
                   padding: EdgeInsets.only(top: 12),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-
+                      RaisedButton(
+                          onPressed: (){},
+                        padding: EdgeInsets.all(14),
+                        color: Colors.amberAccent,
+                        child: Text(
+                          "Salvar",
+                          style: TextStyle(
+                            fontSize: 19,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.deepOrange,
+                          ),
+                        ),
+                      ),
+                      RaisedButton(
+                        onPressed: (){},
+                        padding: EdgeInsets.all(14),
+                        color: Colors.amberAccent,
+                        child: Text(
+                          "Recuperar",
+                          style: TextStyle(
+                            fontSize: 19,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.deepOrange,
+                          ),
+                        ),
+                      ),
+                      RaisedButton(
+                        onPressed: (){},
+                        padding: EdgeInsets.all(14),
+                        color: Colors.amberAccent,
+                        child: Text(
+                          "Remover",
+                          style: TextStyle(
+                            fontSize: 19,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.deepOrange,
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
