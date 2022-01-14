@@ -11,6 +11,15 @@ class Shared extends StatefulWidget {
 class _SharedState extends State<Shared> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+            "SharedPreferences",
+            style: TextStyle(
+              color: Colors.amberAccent,
+            ),
+        ),
+      ),
+    );
   }
 }
