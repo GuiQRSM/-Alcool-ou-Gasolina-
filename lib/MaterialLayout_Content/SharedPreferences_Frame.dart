@@ -119,7 +119,7 @@ class _SharedState extends State<Shared> {
                         ),
                       ),
                       RaisedButton(
-                        onPressed: (){},
+                        onPressed: _rescue,
                         padding: EdgeInsets.all(14),
                         color: Colors.amberAccent,
                         child: Text(
