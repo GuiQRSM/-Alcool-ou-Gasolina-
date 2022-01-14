@@ -28,7 +28,7 @@ class _SharedState extends State<Shared> {
       body: Container(
         width: double.infinity,
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(16),
+          padding: EdgeInsets.all(32),
           child: Center(
             child: Column(
               children: <Widget>[
@@ -37,7 +37,7 @@ class _SharedState extends State<Shared> {
                  child:  Text(
                    "Test for SharedPreferences!",
                    style: TextStyle(
-                       fontSize: 24,
+                       fontSize: 26,
                        fontWeight: FontWeight.w600,
                        color: Colors.deepOrange
                    ),
