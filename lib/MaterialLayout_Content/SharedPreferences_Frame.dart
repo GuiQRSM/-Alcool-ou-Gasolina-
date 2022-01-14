@@ -9,6 +9,9 @@ class Shared extends StatefulWidget {
 }
 
 class _SharedState extends State<Shared> {
+
+  TextEditingController _controllerField = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,6 +48,24 @@ class _SharedState extends State<Shared> {
                ),
                 TextField(
                   keyboardType: TextInputType.text,
+                  decoration: InputDecoration(
+                    labelText: "Campo de texto do teste",
+                    labelStyle: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.deepOrange
+                    ),
+                    hintText: "Content",
+                    hintStyle: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.amberAccent,
+                        fontStyle: FontStyle.italic,
+                    ),
+                  ),
+                  maxLength: 15,
+                  maxLengthEnforced: true,
+                  cursorColor: Colors.deepOrange,
                 ),
               ],
             ),
