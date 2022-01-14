@@ -1,5 +1,6 @@
 import 'package:alcool_ou_gasolina/MaterialLayout_Content/Bitcoin_Frame.dart';
 import 'package:alcool_ou_gasolina/FramesNavigationBar/Token_Frame.dart';
+import 'package:alcool_ou_gasolina/MaterialLayout_Content/SharedPreferences_Frame.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
@@ -164,7 +165,14 @@ void _cleanFields() {
              Padding(
                  padding: EdgeInsets.only(top: 14),
                child: RaisedButton(
-                 onPressed: (){},
+                 onPressed: (){
+                   Navigator.push(
+                       context,
+                       MaterialPageRoute(
+                           builder: (context) => Shared(),
+                       ),
+                   );
+                 },
                  color: Colors.amberAccent,
                  child: Text(
                    "SharedPrefences",
