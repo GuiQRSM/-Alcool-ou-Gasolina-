@@ -32,6 +32,17 @@ class _SharedState extends State<Shared> {
           child: Center(
             child: Column(
               children: <Widget>[
+               Padding(
+                   padding: EdgeInsets.only(bottom: 60),
+                 child:  Text(
+                   "Test for SharedPreferences!",
+                   style: TextStyle(
+                       fontSize: 24,
+                       fontWeight: FontWeight.w600,
+                       color: Colors.deepOrange
+                   ),
+                 ),
+               ),
                 TextField(
                   keyboardType: TextInputType.text,
                 ),
