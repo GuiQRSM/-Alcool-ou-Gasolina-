@@ -13,6 +13,18 @@ class _SharedState extends State<Shared> {
   TextEditingController _controllerField = TextEditingController();
   var dinamicText;
 
+  _save() async {
+
+  }
+
+  _rescue() async {
+
+  }
+
+  _remove() async {
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
