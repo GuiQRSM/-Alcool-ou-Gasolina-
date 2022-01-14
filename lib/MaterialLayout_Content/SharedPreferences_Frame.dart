@@ -26,6 +26,13 @@ class _SharedState extends State<Shared> {
 
   _rescue() async {
 
+    final objPrefs = await SharedPreferences.getInstance();
+    setState(() {
+      dinamicText = objPrefs.getString("key");
+    });
+
+    print("Operação (Recuperar): ${dinamicText.toString()}");
+
   }
 
   _remove() async {
