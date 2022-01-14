@@ -58,7 +58,7 @@ class _SharedState extends State<Shared> {
                     hintText: "Content",
                     hintStyle: TextStyle(
                         fontSize: 15,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.w200,
                         color: Colors.amberAccent,
                         fontStyle: FontStyle.italic,
                     ),
