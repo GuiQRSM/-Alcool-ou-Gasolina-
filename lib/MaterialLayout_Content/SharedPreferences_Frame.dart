@@ -66,6 +66,7 @@ class _SharedState extends State<Shared> {
                   maxLength: 15,
                   maxLengthEnforced: true,
                   cursorColor: Colors.deepOrange,
+                  controller: _controllerField,
                 ),
               ],
             ),
