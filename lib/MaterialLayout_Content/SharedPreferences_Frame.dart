@@ -61,6 +61,11 @@ class _SharedState extends State<Shared> {
                ),
                 TextField(
                   keyboardType: TextInputType.text,
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.deepOrangeAccent
+                  ),
                   decoration: InputDecoration(
                     labelText: "Campo de texto do teste",
                     labelStyle: TextStyle(
