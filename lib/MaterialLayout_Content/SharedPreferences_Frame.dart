@@ -99,7 +99,7 @@ class _SharedState extends State<Shared> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       RaisedButton(
-                          onPressed: (){},
+                          onPressed: _save,
                         padding: EdgeInsets.all(14),
                         color: Colors.amberAccent,
                         child: Text(
